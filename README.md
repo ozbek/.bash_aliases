@@ -1,9 +1,9 @@
 # bash aliases
 
-`df` only what is important:
+`df` only what is important (`dfs`: _df-short_):
 
 ```bash
-alias df="df -h -P | sed '1d' | egrep -v '\/proc$|/dev$|\/run$|^tmpfs.*\/dev.*$|^tmpfs.*\/run.*$|^tmpfs.*\/sys.*$|^tmpfs.*\/var.*$|\/snap.*'"
+alias dfs="df -h -P | sed '1d' | egrep -v '\/proc$|/dev$|\/run$|^tmpfs.*\/dev.*$|^tmpfs.*\/run.*$|^tmpfs.*\/sys.*$|^tmpfs.*\/var.*$|\/snap.*'"
 ```
 
 `pip-upgrade` all packages:
